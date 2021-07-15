@@ -53,7 +53,7 @@ class AbstractTest {
             }
 
             override fun map(exception: Exception): DomainObject {
-                return DomainObject.Fail()
+                return DomainObject.Fail
             }
 
         }
@@ -66,7 +66,7 @@ class AbstractTest {
             }
         }
 
-        class Fail(): DomainObject() {
+        object Fail : DomainObject() {
             override fun map(mapper: DomainToUiMapper): UiObject {
                 TODO("Not done yet")
             }
